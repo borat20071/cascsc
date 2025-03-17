@@ -94,10 +94,10 @@ app.config.update(
 # Database connection function
 def get_db_connection():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="",
-        database="sciencehub"
+        host= os.environ.get("DB_HOST"),
+        user= os.environ.get("DB_USER"),
+        password= os.environ.get("DB_PASS"),
+        database= os.environ.get("DB_NAME")
     )
 
 # Helper to convert DB rows to JSON-friendly format
