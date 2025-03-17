@@ -1,0 +1,1 @@
+UPDATE users SET password = 'admin123' WHERE email = 'admin@example.com'; UPDATE users SET password = 'editor123' WHERE email = 'editor@example.com'; UPDATE users SET password = 'mod123' WHERE email = 'moderator@example.com'; UPDATE users SET password = 'res123' WHERE email = 'researcher@example.com';
